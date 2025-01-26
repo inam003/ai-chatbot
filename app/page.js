@@ -1,22 +1,11 @@
+import Header from "@/components/main/header";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Header */}
-      <header className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-sm px-6 py-4">
-        <div className="container mx-auto flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-white">
-            AI Chatbot
-          </Link>
-          <Button asChild variant="secondary">
-            <Link href="/login">Get Started</Link>
-          </Button>
-        </div>
-      </header>
-
-      {/* Hero Section */}
+      <Header />
       <section className="relative h-screen">
         <div
           className="absolute inset-0 z-0"
