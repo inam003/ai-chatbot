@@ -99,11 +99,7 @@ const ProfilePage = () => {
             Cancel
           </Button>
         </Link>
-        <Button
-          onClick={updateAccountInfo}
-          disabled={isLoading}
-          className="bg-blue-500 transition-colors hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-        >
+        <Button onClick={updateAccountInfo} disabled={isLoading}>
           {isLoading ? "Updating" : "Update Profile"}
         </Button>
       </div>

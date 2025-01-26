@@ -88,7 +88,7 @@ export default function LoginForm({ className, ...props }) {
                 type="submit"
                 className="w-full"
               >
-                {isLoading ? "Loging in..." : "Login"}
+                {isLoading ? "Logging in..." : "Login"}
               </Button>
             </div>
             <div className="mt-4 text-center text-sm">

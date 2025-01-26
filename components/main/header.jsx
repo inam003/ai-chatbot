@@ -42,15 +42,15 @@ const Header = () => {
   return (
     <header className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-sm px-6 py-4">
       <div className="container mx-auto flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-white cursor-pointer">
+        <Link href="/" className="text-3xl font-bold text-white cursor-pointer">
           ChatAI
         </Link>
         {isUser ? (
           <div className="flex items-center gap-4">
-            <Link href="/chat">
+            <Link href="/dashboard">
               <Button variant="secondary">
                 <Sparkle className="size-4" />
-                Chat with AI
+                <span className="hidden md:inline">Chat with AI</span>
               </Button>
             </Link>
             <DropdownMenu>
