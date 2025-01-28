@@ -6,7 +6,7 @@ export function MessageItem({ role, content, attachment }) {
       className={`flex ${role === "user" ? "justify-end" : "justify-start"}`}
     >
       <Card
-        className={`w-full max-w-lg p-4 ${
+        className={`w-auto max-w-2xl p-4 ${
           role === "user"
             ? "bg-blue-500 dark:bg-gray-800 text-white"
             : "bg-gray-200 dark:bg-white dark:text-black text-gray-800"

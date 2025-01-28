@@ -27,7 +27,7 @@ export default function DashboardLayout({ children }) {
             <ModeToggle />
           </div>
         </header>
-        <div className="flex flex-1 flex-col items-center justify-end gap-4 p-4 pt-24">
+        <div className="flex flex-1 flex-col items-center overflow-hidden gap-4 p-4 py-24">
           {children}
         </div>
       </SidebarInset>
