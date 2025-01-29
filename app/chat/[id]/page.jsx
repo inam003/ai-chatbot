@@ -1,7 +1,7 @@
 import { MessageList } from "@/components/chat/message-list";
 import { ChatInput } from "@/components/chat/chat-input";
 
-const ChatInterface = () => {
+const ChatPage = () => {
   const chatMessages = [
     { id: 1, role: "user", content: "Can you explain what Generative AI is?" },
     {
@@ -53,9 +53,11 @@ const ChatInterface = () => {
       <div className="flex-grow overflow-hidden">
         <MessageList messages={chatMessages} />
       </div>
-      <ChatInput />
+      <div className="fixed bottom-0">
+        <ChatInput />
+      </div>
     </div>
   );
 };
 
-export default ChatInterface;
+export default ChatPage;

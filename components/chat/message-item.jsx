@@ -13,9 +13,6 @@ export function MessageItem({ role, content, attachment }) {
         }`}
       >
         <p>{content}</p>
-        {attachment && (
-          <div className="text-xs mt-1">Attachment: {attachment}</div>
-        )}
       </Card>
     </div>
   );

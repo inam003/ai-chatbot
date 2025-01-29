@@ -1,6 +1,5 @@
 import { AppSidebar } from "@/components/chat/app-sidebar";
 import { ModeToggle } from "@/components/theme/mode-toggle";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
   SidebarInset,

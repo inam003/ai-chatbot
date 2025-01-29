@@ -43,7 +43,7 @@ const Hero = () => {
             conversations that adapt to your needs.
           </p>
           {isUser ? (
-            <Link href="/dashboard">
+            <Link href="/chat">
               <Button size="lg" variant="secondary">
                 <Sparkle className="size-5" />
                 Chat with AI

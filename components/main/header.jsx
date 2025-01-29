@@ -47,7 +47,7 @@ const Header = () => {
         </Link>
         {isUser ? (
           <div className="flex items-center gap-4">
-            <Link href="/dashboard">
+            <Link href="/chat">
               <Button variant="secondary">
                 <Sparkle className="size-4" />
                 <span className="hidden md:inline">Chat with AI</span>

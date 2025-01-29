@@ -9,7 +9,6 @@ import {
   Map,
   PieChart,
 } from "lucide-react";
-import { CreateChat } from "@/components/chat/create-chat";
 import { AllChats } from "@/components/chat/all-chats";
 import { NavUser } from "@/components/chat/nav-user";
 import {
@@ -19,6 +18,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import CreateChat from "./create-chat";
 
 // This is sample data.
 const data = {

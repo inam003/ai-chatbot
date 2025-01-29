@@ -4,11 +4,11 @@ import { Textarea } from "../ui/textarea";
 
 export function ChatInput() {
   return (
-    <form className="p-6 fixed bottom-0 left-96 right-32">
+    <form className="p-6">
       <div className="relative">
         <Textarea
           placeholder="Ask a question..."
-          className="pr-24 resize-none rounded-xl overflow-hidden bg-slate-100
+          className="w-[38rem] resize-none rounded-xl overflow-hidden bg-slate-100
  dark:bg-[#2f2f2f] text-black dark:text-white"
           rows={1}
         />
