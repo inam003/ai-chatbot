@@ -19,10 +19,6 @@ const recentChats = [
     message: "Crafting engaging articles...",
   },
   { id: "5", name: "Research", message: "Diving deep into data analysis!" },
-  { id: 6, name: "Code Debugger", message: "Finding and fixing bugs..." },
-  { id: 7, name: "Task Manager", message: "Keeping track of your progress!" },
-  { id: 8, name: "UI/UX Design", message: "Enhancing user experience..." },
-  { id: 9, name: "Tech News", message: "Bringing you the latest trends!" },
 ];
 
 export default function RecentChats() {

@@ -1,14 +1,6 @@
 "use client";
 
 import * as React from "react";
-import {
-  AudioWaveform,
-  Command,
-  Frame,
-  GalleryVerticalEnd,
-  Map,
-  PieChart,
-} from "lucide-react";
 import { AllChats } from "@/components/chat/all-chats";
 import { NavUser } from "@/components/chat/nav-user";
 import {
@@ -27,50 +19,16 @@ const data = {
     email: "m@example.com",
     avatar: "/avatar.jpg",
   },
-  teams: [
-    {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
-  ],
-  chats: [
-    {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
-    },
-    {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
-    },
-    {
-      name: "Travel",
-      url: "#",
-      icon: Map,
-    },
-  ],
 };
 
 export function AppSidebar({ ...props }) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <CreateChat teams={data.teams} />
+        <CreateChat />
       </SidebarHeader>
       <SidebarContent>
-        <AllChats projects={data.chats} />
+        <AllChats />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
