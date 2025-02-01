@@ -21,7 +21,7 @@ import {
 import supabase from "@/lib/supabaseClient";
 import Link from "next/link";
 import toast from "react-hot-toast";
-import { ChatNameDialog } from "./update-chat-name";
+import { UpdateChatName } from "./update-chat-name";
 
 export function AllChats() {
   const { isMobile } = useSidebar();
@@ -76,10 +76,7 @@ export function AllChats() {
       if (error) throw error;
 
       toast.success("Chat deleted successfully.");
-      router.refresh();
-      if (pathname === `/chat/${chatId}`) {
-        router.push("/chat");
-      }
+      router.push("/chat");
     } catch (error) {
       console.error("Error deleting chat:", error);
       toast.error("Failed to delete chat.");
@@ -162,7 +159,7 @@ export function AllChats() {
         </SidebarMenu>
       </SidebarGroup>
 
-      <ChatNameDialog
+      <UpdateChatName
         open={isRenaming}
         onOpenChange={(open) => {
           setIsRenaming(open);

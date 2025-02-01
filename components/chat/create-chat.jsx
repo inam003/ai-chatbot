@@ -24,6 +24,7 @@ export default function CreateChat() {
 
   const handleCreateChat = async (chatName) => {
     const chatId = generateChatId();
+    console.log(chatId);
     const createdAt = formatDate(new Date());
 
     setIsLoading(true);
@@ -36,6 +37,8 @@ export default function CreateChat() {
           name: chatName,
         })
         .select();
+
+      console.log(data[0]);
 
       if (error) throw error;
 

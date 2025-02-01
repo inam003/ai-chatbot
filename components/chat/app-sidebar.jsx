@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import React from "react";
 import { AllChats } from "@/components/chat/all-chats";
 import { NavUser } from "@/components/chat/nav-user";
 import {
@@ -11,27 +11,29 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import CreateChat from "./create-chat";
-
-// This is sample data.
-const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatar.jpg",
-  },
-};
+import { Home } from "lucide-react";
+import { NavButtons } from "./nav-buttons";
 
 export function AppSidebar({ ...props }) {
+  const data = [
+    {
+      title: "Home",
+      url: "/chat",
+      icon: Home,
+      isActive: true,
+    },
+  ];
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <CreateChat />
+        <NavButtons data={data} />
       </SidebarHeader>
       <SidebarContent>
         <AllChats />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
